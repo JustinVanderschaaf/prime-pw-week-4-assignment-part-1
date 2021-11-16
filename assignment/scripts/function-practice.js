@@ -76,7 +76,7 @@ console.log(houseHold);
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 let garden = ["carrots", "beans", "potatoes", "corn", "cabbage", "squash"]
 function find( value, array ){
-for(locate of array){
+for(let locate of array){
   if(locate === value){
     return true
   }
