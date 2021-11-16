@@ -74,10 +74,36 @@ console.log(houseHold);
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let garden = ["carrots", "beans", "potatoes", "corn", "cabbage", "squash"]
 function find( value, array ){
-  
+for(find of array){
+  if(find === value){
+    return true
+  }
+} return false
+
+}
+//second; for extra practice I wanted to see how and if it would work with other loops 
+
+function find2( value, array ){
+  for (let i =0; i< array.length;i++){
+   if(array[i]=== value){return true
+    }
+} return false
 }
 
+//third
+let i=0
+function find3( value, array){
+  while(i<array.length){
+    if(array[i]=== value){return true;
+  }i++
+}return false
+}
+
+console.log(find("beans", garden))
+console.log(find2("potatoes", garden));
+console.log(find3("corn", garden));
 // ----------------------
 // Stretch Goals
 // ----------------------
