@@ -76,8 +76,8 @@ console.log(houseHold);
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 let garden = ["carrots", "beans", "potatoes", "corn", "cabbage", "squash"]
 function find( value, array ){
-for(find of array){
-  if(find === value){
+for(locate of array){
+  if(locate === value){
     return true
   }
 } return false
@@ -102,25 +102,34 @@ function find3( value, array){
 }
 
 console.log(find("beans", garden))
+console.log(find("pies", garden))
 console.log(find2("potatoes", garden));
+console.log(find2("lettuce", garden));
 console.log(find3("corn", garden));
+console.log(find3("meat", garden));
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+if (string[0]=== letter)
+{return true
+}else {return false}
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
+function sumAll(array) {
   let sum = 0
+  for(i=0; i<array.length;i++){
+    sum = array[i]+sum
+  }
   // TODO: loop to add items
   return sum;
 }
+console.log(sumAll([2,5,8,5,5,6,7,2]))
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
