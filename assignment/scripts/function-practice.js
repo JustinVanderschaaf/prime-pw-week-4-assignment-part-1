@@ -147,8 +147,8 @@ if (array[i]>0){
 
 positive(allNumbers)
 
-console.log(allNumbers);
-console.log(newArray)
+console.log("original array " + allNumbers);
+console.log("new Array " + newArray)
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
