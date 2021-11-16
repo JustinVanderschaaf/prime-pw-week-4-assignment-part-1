@@ -15,15 +15,20 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
-  return;
+  return name;
 }
+console.log('hello,', helloName("Justin") + '!' );
+
 // Remember to call the function to test
 
-
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber) {
+  let result = firstNumber + secondNumber
+  return result
   // return firstNumber + secondNumber;
 }
+console.log(addNumbers(6,4));
+
 
 
 // 4. Function to multiply three numbers & return the result
@@ -87,3 +92,4 @@ function sumAll( ) {
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
