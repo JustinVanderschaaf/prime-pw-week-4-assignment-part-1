@@ -153,3 +153,16 @@ console.log("new Array " + newArray);
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+//Create a function that takes an array and a string as arguments and return the index of the string.
+let array = ["carrot", "beans", "peas", "tomato"];
+let string = "peas";
+function findIndex(arr, str) {
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] === str) {
+      return i;
+    }
+  }
+  return console.log("Not in the garden");
+}
+console.log(findIndex(array, string));
