@@ -137,20 +137,34 @@ console.log(sumAll([2, 5, 8, 5, 5, 6, 7, 2]));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 let allNumbers = [4, 0, 8, -4, 19];
-let newArray = [];
 
 function positive(array) {
+  let newArray = [];
   for (i = 0; i < array.length; i++) {
     if (array[i] > 0) {
       newArray.push(array[i]);
     }
   }
+  return newArray;
 }
 
-positive(allNumbers);
+console.log("original array", allNumbers);
+console.log("new array", positive(allNumbers));
 
-console.log("original array " + allNumbers);
-console.log("new Array " + newArray);
+//without return storing the array into a new variable in global scope?
+let newArray2 = [];
+function positive2(array) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      newArray2.push(array[i]);
+    }
+  }
+}
+
+positive2(allNumbers);
+
+console.log("original array", allNumbers);
+console.log("new array2", newArray2);
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
