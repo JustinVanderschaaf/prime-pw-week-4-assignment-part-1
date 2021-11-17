@@ -44,9 +44,11 @@ function isPositive(number) {
 }
 
 // Call the function to test each outcome (true & false)
+//tested and passed
 console.log(isPositive(4));
 console.log(isPositive(-4));
 // Write a separate console.log statement for each outcome
+//tested and passed
 console.log("isPositive - should say true", isPositive(3));
 console.log("isPositive - should say false", isPositive(0));
 console.log("isPositive - should say false", isPositive(-3));
@@ -160,9 +162,9 @@ let string = "peas";
 function findIndex(arr, str) {
   for (i = 0; i < arr.length; i++) {
     if (arr[i] === str) {
-      return i;
+      return console.log("This is at index", i);
     }
   }
   return console.log("Not in the garden");
 }
-console.log(findIndex(array, string));
+findIndex(array, string);
