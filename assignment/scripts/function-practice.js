@@ -125,7 +125,7 @@ console.log("isFirstLetter - should say false", isFirstLetter("z", "apple"));
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
   let sum = 0;
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     sum = array[i] + sum;
   }
   // TODO: loop to add items
@@ -140,7 +140,7 @@ let allNumbers = [4, 0, 8, -4, 19];
 
 function positive(array) {
   let newArray = [];
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] > 0) {
       newArray.push(array[i]);
     }
@@ -154,7 +154,7 @@ console.log("new array", positive(allNumbers));
 //without return storing the array into a new variable in global scope?
 let newArray2 = [];
 function positive2(array) {
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] > 0) {
       newArray2.push(array[i]);
     }
@@ -174,7 +174,7 @@ console.log("new array2", newArray2);
 let array = ["carrot", "beans", "peas", "tomato"];
 let string = "peas";
 function findIndex(arr, str) {
-  for (i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === str) {
       return console.log("This is at index", i);
     }
